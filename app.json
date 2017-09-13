@@ -1,7 +1,19 @@
 {
-  "expo": {
-    "name": "Bacha",
-    "icon": "./assets/icon/pingdom-app-icon.png",
-    "sdkVersion": "20.0.0"
-  }
+    "expo": {
+        "name": "Bacha",
+        "icon": "./assets/icon/pingdom-app-icon.png",
+        "sdkVersion": "20.0.0",
+        "hooks": {
+            "postPublish": [
+                {
+                    "file": "sentry-expo/upload-sourcemaps",
+                    "config": {
+                        "organization": "hyphenated",
+                        "project": "bacha",
+                        "authToken": "80434955721f4743a7f61db0ee23c8f3e840e907c08549e7ad7bcfc97c2f1f61"
+                    }
+                }
+            ]
+        }
+    }
 }

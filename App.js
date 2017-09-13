@@ -1,16 +1,12 @@
 import React from 'react';
 import {Font} from 'expo';
-import {StyleSheet, Text, View} from 'react-native';
-import Loading from './containers/Loading/Loading';
+// import Sentry from 'sentry-expo';
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center'
-    }
-});
+// Components
+import Loading from './containers/Loading/Loading';
+import Landing from './containers/Landing/Landing';
+
+// Sentry.config('https://b01ce80788b94854837fbc9d8ce0f178@sentry.io/216306').install();
 
 export default class App extends React.Component {
     constructor(props) {
@@ -40,11 +36,7 @@ export default class App extends React.Component {
             return <Loading />;
         }
         return (
-            <View style={styles.container}>
-                <Text>Open up App.js to start working on your app!</Text>
-                <Text>Changes you make will automatically reload.</Text>
-                <Text>Shake your phone to open the developer menu.</Text>
-            </View>
+            <Landing />
         );
     }
 }

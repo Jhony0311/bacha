@@ -4,7 +4,7 @@ import colors from '../../styles/colors.styles';
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: colors.back,
         alignItems: 'center',
         justifyContent: 'center'
     },

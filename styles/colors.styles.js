@@ -6,12 +6,15 @@ const azureBlue = '#468AC9';
 const carminePink = '#F93636';
 
 const colors = {
+    black,
+    white,
     primary: spaceCadet,
     secondary: azureBlue,
     accent: carminePink,
     text: black,
     link: spaceCadet,
-    back: white
+    back: white,
+    warning: yellow
 };
 
 
