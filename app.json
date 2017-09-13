@@ -1,5 +1,7 @@
 {
   "expo": {
+    "name": "Bacha",
+    "icon": "./assets/icon/pingdom-app-icon.png",
     "sdkVersion": "20.0.0"
   }
 }
