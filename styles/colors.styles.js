@@ -1,6 +1,6 @@
 const black = '#171E1D';
 const white = '#F6F7F8';
-const lightGray = '#EAEAEA';
+const lightGray = '#E1E9ED';
 const yellow = '#FFAC17';
 const spaceCadet = '#1F314F';
 const azureBlue = '#468AC9';

@@ -1,7 +1,7 @@
 import {StyleSheet, Dimensions} from 'react-native';
 import colors from '../../styles/colors.styles';
 
-const {height, width} = Dimensions.get('window');
+const {width} = Dimensions.get('window');
 
 const styles = StyleSheet.create({
     header: {
