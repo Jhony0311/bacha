@@ -8,7 +8,7 @@ import styles from './Landing.styles';
 import base from '../../styles/base.styles';
 
 import Loading from '../Loading/Loading';
-import MenuItem from '../../components/Menu/MenuItem';
+import MenuCategoryItem from '../../components/Menu/MenuCategoryItem';
 import Grid from '../../components/Menu/Grid';
 
 const headerImage = require('../../assets/images/landing-header.jpg');
@@ -23,14 +23,14 @@ const Landing = ({data: {loading, allCategories}}) => {
         <View style={base.appContainer}>
             <View style={styles.header}>
                 <Image style={styles.headerImage} source={headerImage} />
-                <Text style={[base.titleText, styles.headerTitle]}>Que se te antoja hoy?</Text>
+                <Text style={[base.titleText, styles.headerTitle]}>QUE SE TE ANTOJA HOY?</Text>
             </View>
             <Grid>
                 {
                     allCategories.map((c) => {
                         if (c.isInMenu) {
                             return (
-                                <MenuItem key={c.id} {...c} />
+                                <MenuCategoryItem key={c.id} {...c} />
                             );
                         }
                         return false;
