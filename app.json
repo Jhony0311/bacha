@@ -1,7 +1,7 @@
 {
     "expo": {
         "name": "Bacha",
-        "icon": "./assets/icon/pingdom-app-icon.png",
+        "icon": "./assets/icon/appicon-512.png",
         "sdkVersion": "20.0.0",
         "hooks": {
             "postPublish": [

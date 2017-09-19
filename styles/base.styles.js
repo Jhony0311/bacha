@@ -12,13 +12,13 @@ const base = StyleSheet.create({
         color: colors.text
     },
     titleText: {
-        fontFamily: 'Merriweather-Black'
+        fontFamily: 'Cabin-Bold'
     },
     regularText: {
-        fontFamily: 'ScopeOne-Regular'
+        fontFamily: 'Raleway-Regular'
     },
     boldText: {
-        fontFamily: 'Merriweather-Bold'
+        fontFamily: 'Cabin-SemiBold'
     },
     italicText: {
         fontFamily: 'Raleway-Italic'

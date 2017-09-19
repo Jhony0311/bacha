@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {View, Text, Image, ScrollView} from 'react-native';
 import {graphql} from 'react-apollo';
 import gql from 'graphql-tag';
@@ -8,8 +9,8 @@ import base from '../../styles/base.styles';
 
 import Loading from '../Loading/Loading';
 import MenuItem from '../../components/Menu/MenuItem';
+import Grid from '../../components/Menu/Grid';
 
-/* eslint-disable-next-line */
 const headerImage = require('../../assets/images/landing-header.jpg');
 
 const Landing = ({data: {loading, allCategories}}) => {
@@ -24,7 +25,7 @@ const Landing = ({data: {loading, allCategories}}) => {
                 <Image style={styles.headerImage} source={headerImage} />
                 <Text style={[base.titleText, styles.headerTitle]}>Que se te antoja hoy?</Text>
             </View>
-            <ScrollView styles={styles.menuGrid} contentContainerStyle={styles.menuGridContainer}>
+            <Grid>
                 {
                     allCategories.map((c) => {
                         if (c.isInMenu) {
@@ -35,9 +36,16 @@ const Landing = ({data: {loading, allCategories}}) => {
                         return false;
                     })
                 }
-            </ScrollView>
+            </Grid>
         </View>
     );
+};
+
+Landing.propTypes = {
+    data: PropTypes.shape({
+        loading: PropTypes.bool,
+        allCategoriese: PropTypes.array
+    })
 };
 
 export default graphql(gql`

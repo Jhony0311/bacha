@@ -5,6 +5,8 @@ const {height, width} = Dimensions.get('window');
 
 const styles = StyleSheet.create({
     header: {
+        justifyContent: 'center',
+        flex: 0,
         height: 200,
         paddingTop: 20,
         paddingBottom: 20,
@@ -14,9 +16,16 @@ const styles = StyleSheet.create({
         width: '100%'
     },
     headerTitle: {
+        flex: 0,
         fontSize: 32,
-        color: colors.white,
-        textAlign: 'center'
+        color: colors.accent,
+        textAlign: 'center',
+        textShadowColor: colors.black,
+        textShadowOffset: {
+            width: 2,
+            height: 2
+        },
+        zIndex: 3
     },
     headerImage: {
         position: 'absolute',
@@ -26,17 +35,6 @@ const styles = StyleSheet.create({
         top: 0,
         right: 0,
         bottom: 0
-    },
-    menuGrid: {
-        width,
-        height: height - 200 - 15
-    },
-    menuGridContainer: {
-        paddingTop: 15,
-        paddingBottom: 15,
-        flexDirection: 'row',
-        justifyContent: 'space-around',
-        flexWrap: 'wrap'
     }
 });
 

@@ -29,11 +29,11 @@ export default class App extends React.Component {
     componentDidMount() {
         /* eslint-disable */
         Font.loadAsync({
-            'Merriweather-Black': require('./assets/fonts/Merriweather-Black.ttf'),
-            'Merriweather-Bold': require('./assets/fonts/Merriweather-Bold.ttf'),
+            'Cabin-Bold': require('./assets/fonts/Cabin-Bold.ttf'),
+            'Cabin-SemiBold': require('./assets/fonts/Cabin-SemiBold.ttf'),
+            'Raleway-Regular': require('./assets/fonts/Raleway-Regular.ttf'),
             'Raleway-Italic': require('./assets/fonts/Raleway-Italic.ttf'),
             'Raleway-Light': require('./assets/fonts/Raleway-Light.ttf'),
-            'ScopeOne-Regular': require('./assets/fonts/ScopeOne-Regular.ttf')
         }).then(() => {
             this.setState(() => ({
                 isLoading: false
